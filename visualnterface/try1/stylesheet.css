@@ -1,0 +1,207 @@
+:root {
+    --col1: black;
+    --col2: aquamarine;
+    --col3: #1f1f1f;
+    --navbarWidth: 100px;
+    --negNavbarWidth: -100px;
+    --halfNavbarWidth: 50px;
+}
+
+body {
+    background-color: black;
+    font-family: 'Inter', sans-serif;
+}
+
+    body::-webkit-scrollbar {
+        width: 10px;
+    }
+
+    body::-webkit-scrollbar-track {
+        background: black;
+    }
+
+    body::-webkit-scrollbar-thumb {
+        background: aquamarine;
+    }
+
+main {
+    padding : var(--navbarWidth);
+}
+
+.goo-font {
+    font-family: 'Inter', sans-serif;
+}
+
+.center-x {
+    display: flex;
+    justify-content: center;
+}
+
+.title {
+    color: white;
+    margin: 0px;
+    font-size: 80px;
+}
+.sub-title {
+    margin-top: -30px;
+    margin-bottom: 150px;
+    font-size: 20px;
+    color: white;
+}
+
+input {
+    text-align: center;
+    margin: 10px;
+    margin-top: -10px;
+    font-size: 20px;
+    padding: 8px;
+    border: solid;
+    color-scheme: dark;
+}
+
+.fixx1 {
+    margin-top: -5px;
+    margin-left: 11px;
+    font-size: 23px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.form {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: var(--negNavbarWidth);
+}
+
+::-webkit-input-placeholder {
+    text-align: center;
+}
+
+:-moz-placeholder {
+    text-align: center;
+}
+
+.navbar{
+    width: var(--navbarWidth);
+    height: 100vh;
+    position: fixed;
+    background-color: var(--col3);
+}
+.navbar-nav {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+.nav-item {
+    width: var(--navbarWidth);
+}
+.nav-item:hover {
+    background: dimgray;
+}
+
+.sel-navitem {
+    width: var(--navbarWidth);
+    display: flex;
+    justify-content: center;
+    background: black;
+}
+.nav-link {
+    height: 130px;
+    width: var(--navbarWidth);
+    fill: var(--col2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ico {
+    height: 48px;
+    width: 56px;
+    fill: var(--col2);
+}
+
+.lista-angajati{
+    margin-left : 100px;
+    margin-top:-65px;
+    color:white;
+}
+.titlu-listaangajati{
+
+}
+
+.list-wrap{
+    opacity: .8;
+    background: black;
+}
+
+.lista-zboruri {
+    color: white;
+    list-style: none;
+    opacity: 1;
+}
+.lz-me {
+    font-size: 27px;
+    opacity: 1;
+}
+.lz-se {
+    font-size: 18px;
+}
+
+.sublist-elem {
+    margin: 15px;
+    padding-bottom: 11px;
+    padding-right: 10px;
+    padding-left: 10px;
+    width: fit-content;
+    user-select: none;
+}
+.pilot {
+    list-style: outside url('ico/pilot.svg');
+}
+    .pilot:hover{
+        background: aquamarine;
+        color: black;
+    }
+.pilot-nh {
+    list-style: outside url('ico/pilot.svg');
+}
+.attendant {
+    list-style: outside url('ico/attendant.svg');
+}
+.manager{
+    list-style: outside url('ico/manager.svg');
+}
+.ceo {
+    list-style: outside url('ico/ceo.svg');
+}
+.plane {
+    list-style: outside url('ico/plane.svg');
+}
+    .plane:hover {
+        background: aquamarine;
+        color: black;
+    }
+.plane-nh {
+    list-style: outside url('ico/plane.svg');
+    margin-top: 18px;
+    margin-bottom: 18px;
+    margin-left: 12px;
+}
+
+.plane-nr {
+    display: inline;
+    padding-top: 12px;
+}
+.plane-nr:hover {
+    background-color: aquamarine;
+    color: black;
+}
+
+.lista-avioanepilot{
+    color: white;
+}
+
+.split-page{
+    display: flex;
+    justify-content:space-between;
+}
